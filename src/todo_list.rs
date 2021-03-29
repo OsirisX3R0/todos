@@ -49,6 +49,7 @@ impl Display for TodoList {
 }
 
 // For listing todos; We can avoid using this with the above implementation
+// MORE TROUBLE THAN IT'S WORTH!!!!!!!!
 // pub struct Todos(pub Vec<todo::Todo>);
 
 // impl Display for Todos {
