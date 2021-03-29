@@ -1,0 +1,10 @@
+[package]
+name = "todos"
+version = "0.1.0"
+authors = ["Richard Harris <richardharris916@gmail.com>"]
+edition = "2018"
+description = "A crate made to jump into coding in Rust."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
