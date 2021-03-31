@@ -19,12 +19,7 @@ impl PartialEq for Todo {
 
 impl Display for Todo {
   fn fmt(&self, f: &mut Formatter) -> Result {
-    let completed = match self.completed {
-      todo_status::TodoStatus::Complete => "x",
-      _ => " ",
-    };
-
-    write!(f, "[{}] {}", completed, self.text)
+    write!(f, "[{}] {}", self.completed, self.text)
   }
 }
 

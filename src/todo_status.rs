@@ -1,3 +1,5 @@
+use std::fmt::{Display, Error, Formatter};
+
 #[derive(Debug)]
 pub enum TodoStatus {
   Complete,
@@ -20,6 +22,17 @@ impl PartialEq for TodoStatus {
         _ => false,
       },
     }
+  }
+}
+
+impl Display for TodoStatus {
+  fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
+    let suit = match &self {
+      TodoStatus::Complete => "x",
+      TodoStatus::Incomplete => " ",
+    };
+
+    write!(f, "{}", suit)
   }
 }
 
